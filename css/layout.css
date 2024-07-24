@@ -1,0 +1,157 @@
+/*==================================================================
+                            Layout Styles
+===================================================================*/
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/*==================================================================
+                            SP Styles
+===================================================================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppings", sans-serif;
+
+}
+
+.sp-efforts-wrap {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease-in;
+    z-index: 9;
+    margin-top: 20px;
+}
+
+.sp-efforts-wrap::before, .sp-efforts-wrap::after {
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+    background: #34495e;
+}
+
+.sp-efforts-wrap::before {
+    top: -37px;
+    left: 100%;
+}
+
+.sp-efforts-wrap:hover:before {
+    left: -37px;
+    opacity: 1;
+}
+
+.sp-efforts-wrap::after {
+    right: 100%;
+    bottom: -37px;
+}
+
+.sp-efforts-wrap:hover:after {
+    left: -37px;
+    opacity: 1;
+}
+
+.sp-efforts-wrap:hover {
+    color: #ffff;
+}
+
+.sp-efforts-wrap h3 {
+    color: #ffff;
+}
+
+.sp-efforts-wrap:hover h3:after {
+    color: #ffff;
+}
+
+.sp-efforts-wrap:hover .sp-efforts-icon i {
+    transform: rotate(360deg);
+}
+
+.sp-efforts-wrap h4 {
+    overflow-y: hidden;
+}
+
+.section-title, .section-title h2 {
+    overflow-y: hidden;
+}
+
+/*==================================================================
+                            Goals Styles
+===================================================================*/
+.closebtn:hover {
+    color: black;
+}
+
+/*==================================================================
+                            Home Styles
+===================================================================*/
+.btn1 {
+    padding: 10px 18px;
+    background-color: transparent;
+    color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: solid;
+    border-radius: 2px;
+    border-color: #ffff;
+    border-top-left-radius: 15px;
+    transition: all 0.5s ease-in;
+    margin-right: -6px;
+}
+
+.btn1:hover {
+    text-decoration: none;
+    color: #ffff;
+    background-color: deepskyblue;
+    border-color: deepskyblue;
+}
+
+.btn2 {
+    padding: 10px 18px;
+    background-color: transparent;
+    color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: solid;
+    border-radius: 2px;
+    border-color: #ffff;
+    border-bottom-right-radius: 15px;
+    transition: all 0.5s ease-in;
+}
+
+.btn2:hover {
+    text-decoration: none;
+    color: #ffff;
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.socialnetworks a.fa {
+    border: solid;
+    border-color: #ffff;
+    border-radius: 25px;
+    padding: 14px;
+    color: #ffff;
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s ease-in;
+    text-align: center;
+}
+
+.socialnetworks a.fa:hover {
+    text-decoration: none;
+    background-color: deepskyblue;
+    color: #ffff;
+    border: solid;
+    border-radius: 25px;
+    border-color: deepskyblue;
+}
